@@ -1,0 +1,31 @@
+.customers__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customers__item {
+  width: 170px;
+  height: 92px;
+  &:not(:last-child) {
+  margin-right: 30px;
+}
+
+}
+.customers__link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  fill: #afb1b8;
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: border 250ms $timing-function, fill 250ms $timing-function;
+  &:hover,
+  &:focus {
+  border-color: $accent-color;
+  fill: $accent-color;
+}
+}

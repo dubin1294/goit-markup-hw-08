@@ -1,0 +1,100 @@
+.button-portfolio {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  border: none;
+  border-radius: 4px;
+  color: $primary-color;
+  padding: 6px 22px;
+  cursor: pointer;
+  transform: color 250ms $timing-function, background-color 250ms $timing-function,
+    box-shadow 250ms $timing-function;
+    &:hover,
+  &:focus {
+  background-color: $accent-color;
+  color: $third-color;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+}
+.button-items {
+  @include centeredFlex;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+.button-item:not(:last-child) {
+  padding-right: 8px;
+}
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio-item {
+  width: 370px;
+  background: $third-color;
+}
+
+.portfolio-thumb {
+  position: relative;
+  width: 370px;
+  height: 294px;
+  overflow: hidden;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  padding: 63px 24px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  color: $third-color;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  opacity: 1;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  transform: translateY(0);
+}
+
+.portfolio-link {
+  display: block;
+  transition: box-shadow 250ms $timing-function;
+  &:hover,
+  &:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+}
+.portfolio-title {
+  color: $primary-color;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  padding: 20px 0 0 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+}
+
+.portfolio-article {
+  color: $second-color;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  padding: 0 0 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}

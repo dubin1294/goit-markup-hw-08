@@ -1,0 +1,147 @@
+.joint {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer {
+  background: #2f303a;
+  padding: 60px 0;
+}
+
+.footer__logo {
+  color:$third-color;
+  font-family: 'Raleway';
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
+  .logo {
+  align-items: center;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: $accent-color;
+  }
+}
+
+.container__address {
+  min-width: 231px;
+}
+
+.address__list {
+  padding: 0;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__link {
+  font-style: normal;
+  line-height: 1.7;
+  text-decoration-line: none;
+  color: $third-color;
+  transition: color 250ms $timing-function;
+}
+
+.footer__link {
+  font-style: normal;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms $timing-function;
+}
+
+.socials {
+  display: inline-block;
+  margin-left: 70px;
+}
+
+.join__in {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $third-color;
+  margin-bottom: 20px;
+}
+
+.social__list {
+ @include centeredFlex;
+}
+.social__item {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  border-radius: 50%;
+  align-items: center;
+  &:not(:last-child) {
+  margin-right: 10px;
+}
+}
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: background-color 250ms $timing-function;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.social__icon {
+  fill: $third-color;
+}
+.mailing{
+  margin-left: 93px;
+}
+.mailing__title {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $third-color;
+  margin-bottom: 20px;
+}
+
+.email__form {
+  display: flex;
+}
+
+.email__icon {
+  color: $third-color;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+  outline: none;
+  padding: 15px 0 15px 16px;
+}
+.submit__btn {
+  display: flex;
+  align-items: center;
+  min-width: 200px;
+  margin-left: 12px;
+  padding: 10px 28px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: $third-color;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+
+.icon__submit {
+  margin-left: 10px;
+}
