@@ -1,27 +1,47 @@
 .hero {
   padding: 0;
   text-align: center;
-  max-width: 1600px;
-  height: 600px;
+  width: 480px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-color: $second-color;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../imeges/heroimeg.jpg);
+    url(../../imeges/mobile/heromob1x.jpg),url(../../imeges/mobile/heromob2x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  
+  @media screen and (min-width: 768px){
+    width: 768px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../../imeges/tablet/herotab1x.jpg), url(../../imeges/tablet/herotab2x.jpg);
+  }
+
+  @media screen and (min-width: 1200px){
+    width: 1200px;
+    height: 600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../imeges/heroimeg.jpg), url(../../imeges/heroimeg2x.jpg);
+  }
 }
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-  width: 696px;
+  font-size: 26px;
+  line-height: 1.6;
+  width: 360px;
   letter-spacing: 0.06em;
-  padding-top: 200px;
+  padding-top: 118px;
   text-transform: uppercase;
   margin: 0 auto;
   color: $third-color;
+
+ @media screen and (min-width: 1200px) {
+  width: 696px;
+  font-size: 44px;
+  line-height: 1.4;
+  padding-top: 200px;
+  
+}
+
 }
 .button {
   background-color: $accent-color;
