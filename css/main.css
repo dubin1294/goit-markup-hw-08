@@ -427,7 +427,7 @@ img {
 
 .modal {
   padding: 40px;
-  width: 528px;
+  width: 450px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -437,6 +437,11 @@ img {
   transform: translate(-50%, -50%) scaleY(1);
   transition: transform 500ms linear;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -585,10 +590,18 @@ img {
 }
 
 .checkbox-label {
+  font-size: 12px;
   color: #757575;
-  line-height: 1.7;
-  display: flex;
+  line-height: 1.17;
+  display: block;
   align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-label {
+    display: flex;
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .check-text {
@@ -714,7 +727,7 @@ img {
 .hero {
   padding: 0;
   text-align: center;
-  width: 450px;
+  max-width: 450px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -731,7 +744,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    width: 768px;
+    max-width: 768px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//../imeges/tablet/herotab1x.jpg);
   }
 }
@@ -745,9 +758,6 @@ img {
     max-width: 1600px;
     height: 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//../imeges/heroimeg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
