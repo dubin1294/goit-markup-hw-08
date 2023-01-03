@@ -20,30 +20,48 @@
 }
 
 }
-.button-items {
+.button__list {
   @include centeredFlex;
-  margin-bottom: 50px;
+  gap: 8px;
   cursor: pointer;
+  @media screen and (max-width: 767px){
+  width: 326px;
+  flex-wrap: wrap;
+  justify-content: left;
+  }
 }
-.button-item:not(:last-child) {
-  padding-right: 8px;
+.button-item{
+ margin-bottom: 15px;
 }
+
 .portfolio-items {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  margin-top: 25px;
 }
 
 .portfolio-item {
-  width: 370px;
+  width: 450px;
   background: $third-color;
+  @media screen and (min-width: 768px){
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px){
+   width: 370px;
+  }
 }
 
 .portfolio-thumb {
   position: relative;
-  width: 370px;
-  height: 294px;
+  width: 450px;
   overflow: hidden;
+    @media screen and (min-width: 768px){
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px){
+   width: 370px;
+  }
 }
 
 .portfolio-overlay {
