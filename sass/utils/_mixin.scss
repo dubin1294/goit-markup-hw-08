@@ -4,7 +4,7 @@
     line-height: $lh;
     letter-spacing: $ls;
 }
- @mixin centeredFlex(){
+ @mixin centeredFlex (){
     display: flex;
     align-items: center;
     justify-content: center;

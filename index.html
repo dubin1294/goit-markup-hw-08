@@ -26,11 +26,11 @@
 
     <header class="header">
       <div class="container-header container">
+        <a href="index.html" class="header-logo"> <span class="logo">Web</span>Studio</a>
+
+        <!--Навігація на інші сторінки-->
+
         <nav class="navigation">
-          <a href="index.html" class="header-logo"> <span class="logo">Web</span>Studio</a>
-
-          <!--Навігація на інші сторінки-->
-
           <ul class="navigation__list">
             <li class="navigation__item">
               <a class="navigation__link current link" href="index.html">Студія</a>
@@ -61,8 +61,64 @@
             >
           </li>
         </ul>
+
+        <!--Мобільне меню кнопка відкрити-->
+
+        <button data-menu-button type="button" class="mobil-menu__button">
+          <svg width="40" height="40" aria-label="мобільне меню" class="mobil-menu-open__icon">
+            <use class="mobile-icon__menu" href="./imeges/icons.svg#icon-menu"></use>
+          </svg>
+          <svg width="40" height="40" aria-label="мобільне меню" class="close-icon">
+            <use class="mobile-icon__crose" href="./imeges/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <div class="menu-mobile" id="menu-mobile" data-menu>
+          <ul class="header-menu__mobile">
+            <li class="studio-mobile">
+              <a href="./index.html" class="mobile-link car-studio">Студія</a>
+            </li>
+            <li class="studio-mobile">
+              <a href="./portfolio.html" class="mobile-link">Портфоліо</a>
+            </li>
+            <li class="studio-mobile">
+              <a href="./index.html" class="mobile-link">Контакти</a>
+            </li>
+          </ul>
+          <div class="mobile-contakt">
+            <ul class="mobile-contakt__list">
+              <li class="tel-menu__mobile">
+                <a href="tel:+380961111111" class="tel-mobile"> +38 096 111 11 11</a>
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="mail-mobile"> info@devstudio.com</a>
+              </li>
+            </ul>
+
+            <ul class="nav-mobile__list--social">
+              <li class="nav-mobile__link-social">
+                <a href="https://www.instagram.com/" class="nav-mobile__link-social"
+                  >Instagram <span class="line-mobile__menu"></span
+                ></a>
+              </li>
+              <li class="nav-mobile__link-social">
+                <a href="https://twitter.com/" class="nav-mobile__link-social"
+                  >Twitter <span class="line-mobile__menu"></span
+                ></a>
+              </li>
+              <li class="nav-mobile__link-social">
+                <a href="https://www.facebook.com/" class="nav-mobile__link-social"
+                  >Facebook <span class="line-mobile__menu"></span
+                ></a>
+              </li>
+              <li class="nav-mobile__link-social">
+                <a href="https://www.linkedin.com/" class="nav-mobile__link-social">Linkedin</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
+
     <main class="main-studio">
       <!--Слонаг Компанії-->
 
@@ -199,10 +255,7 @@
                     ./imeges/mobile/productdesignermob2x.jpg 2x
                   "
                 />
-                <img
-                  src="./imeges/productdesigner.jpg 1x,./imeges/productdesigner2x.jpg 2x"
-                  alt="Чоловік в окулярах"
-                />
+                <img src="./imeges/productdesigner.jpg 1x" alt="Чоловік в окулярах" />
               </picture>
               <div class="team__box">
                 <h3 class="team__member">Ігор Дем'яненко</h3>
@@ -243,14 +296,12 @@
             <li class="team__item">
               <picture>
                 <source
-                  media="(min-width:1200px )"
-                  srcset="./imeges/frontenddeveloper.jpg 1x, 
-                  ./imeges/frontenddeveloper2x.jpg 2x"
+                  media="(min-width:1200px)"
+                  srcset="./imeges/frontenddeveloper.jpg 1x, /imeges/frontenddeveloper2x.jpg 2x"
                 />
                 <source
-                  media="(min-width:768 )"
-                  srcset="./imeges/tablet/fdrtab1x.jpg 1x, 
-                  ./imeges/tablet/fdtab2x.jpg 2x"
+                  media="(min-width:768px)"
+                  srcset="./imeges/tablet/fdrtab1x.jpg 1x, ./imeges/tablet/fdtab2x.jpg 2x"
                 />
                 <source
                   media="(max-width:767px)"
@@ -259,10 +310,7 @@
                     ./imeges/mobile/frontenddevelopermob2x.jpg 2x
                   "
                 />
-                <img
-                  src="./imeges/frontenddeveloper.jpg 1x,./imeges/frontenddeveloper2x.jpg 2x"
-                  alt="Жінка в окулярах"
-                />
+                <img src="./imeges/frontenddeveloper.jpg 1x" alt="Жінка в окулярах" />
               </picture>
               <div class="team__box">
                 <h3 class="team__member">Ольга Рєпіна</h3>
@@ -320,10 +368,7 @@
                     ./imeges/mobile/marketingmob2x.jpg 2x
                   "
                 />
-                <img
-                  src="./imeges/marketing.jpg 1x,./imeges/marketing2x.jpg 2x"
-                  alt="Чоловік усміхається"
-                />
+                <img src="./imeges/marketing.jpg 1x" alt="Чоловік усміхається" />
               </picture>
               <div class="team__box">
                 <h3 class="team__member">Микола Тарасов</h3>
@@ -380,10 +425,7 @@
                     ./imeges/mobile/designermob2x.jpg 2x
                   "
                 />
-                <img
-                  src="./imeges/designer.jpg 1x,./imeges/designer2x.jpg 2x"
-                  alt="Чоловік в окулярах-2"
-                />
+                <img src="./imeges/designer.jpg 1x" alt="Чоловік в окулярах-2" />
               </picture>
 
               <div class="team__box">
@@ -554,7 +596,6 @@
         </div>
       </footer>
     </main>
-    <div class="mobile-menu"></div>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-btn" data-modal-close>
