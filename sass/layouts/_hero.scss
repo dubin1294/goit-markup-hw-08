@@ -39,13 +39,13 @@
   font-weight: 900;
   font-size: 26px;
   line-height: 1.6;
-  // width: 360px;
   letter-spacing: 0.06em;
-
   text-transform: uppercase;
   margin: 0 auto 30px;
   color: $third-color;
-
+ @media screen and (min-width: 768px){
+ width: 360px;
+ }
  @media screen and (min-width: 1200px) {
   width: 696px;
   font-size: 44px;
